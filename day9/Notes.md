@@ -35,4 +35,9 @@ return matcher.find();
 Source for above code [StackOverflow](https://stackoverflow.com/questions/8204680/java-regex-email).<br>
 with in  [ ] -brackets you specify the cases you want to match in regex. <br>
 with in { }- you specify the number of characters or the length of string.
+<br>
+<br>
+ _Position finding :_ <br>
+String: Hello find the ll position in the given string also find position of l in needle string.
 
+**Complete the Linked list nums addition on your own**
