@@ -23,3 +23,13 @@
 Incase if we are to detect a pattern we use **Regex**.
 Inorder to test the regex we can use [Regex Test](https://regexr.com/) and for reference use [Reference](https://www.javatpoint.com/java-regex).
 - In java inorder to mark the end of String it appends with '\Z' and in regex that '\Z'==$ so append $ to match each String. 
+```
+public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
+  Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+
+public static boolean validate(String emailStr) {
+Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
+return matcher.find();
+}
+```
+Source for above code [StackOverflow](https://stackoverflow.com/questions/8204680/java-regex-email).
