@@ -32,4 +32,7 @@ Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
 return matcher.find();
 }
 ```
-Source for above code [StackOverflow](https://stackoverflow.com/questions/8204680/java-regex-email).
+Source for above code [StackOverflow](https://stackoverflow.com/questions/8204680/java-regex-email).<br>
+with in  [ ] -brackets you specify the cases you want to match in regex. <br>
+with in { }- you specify the number of characters or the length of string.
+
