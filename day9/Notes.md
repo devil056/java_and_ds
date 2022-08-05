@@ -45,5 +45,5 @@ String: Hello find the ll position in the given string also find position of l i
 ### Huffman coding
 ### Heaps
 - There are two types of heaps max heap and min heap
-- **[Link to refer Max heap](https://www.gatevidyalay.com/heap-operations-max-heap-operations-examples/)**
+- **[Link to refer Max heap](https://www.gatevidyalay.com/tag/heap-data-structure-ppt/)**
 - 
