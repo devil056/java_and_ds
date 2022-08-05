@@ -1,7 +1,6 @@
 import java.util.Stack;
 import java.util.function.BinaryOperator;
 
-
 class Node2 {
     int value;
     Node2 left;
@@ -10,9 +9,7 @@ class Node2 {
 
     public Node2(int data) {
         this.value = data;
-
     }
-
 
     public Node2 root;
 
@@ -70,14 +67,14 @@ class Node2 {
 
 class App {
     public static void main(String args[]) {
-        Node2 rootnode = new Node2(25);
-        rootnode.insert(rootnode, 11);
-        rootnode.insert(rootnode, 10);
-        rootnode.insert(rootnode, 30);
-        rootnode.insert(rootnode, 28);
-        rootnode.insert(rootnode, 20);
-        rootnode.insert(rootnode, 35);
-        rootnode.preOrder(rootnode);
-        rootnode.inOrder(rootnode);
+        Node2 rootNode = new Node2(25);
+        rootNode.insert(rootNode, 11);
+        rootNode.insert(rootNode, 10);
+        rootNode.insert(rootNode, 30);
+        rootNode.insert(rootNode, 28);
+        rootNode.insert(rootNode, 20);
+        rootNode.insert(rootNode, 35);
+        rootNode.preOrder(rootNode);
+        rootNode.inOrder(rootNode);
     }
 }
