@@ -26,12 +26,17 @@ class TraverseTree {
         preOrder(node.right);
     }
 
-    void inOrder(Node4 node){
-
+    void inOrder(Node4 node) {
+        if (node == null) return;
+        inOrder(node.left);
+        System.out.print(node.item + "->");
+        inOrder(node.right);
     }
-
-    void postOrder(Node4 node){
-
+    void postOrder(Node4 node) {
+        if (node == null) return;
+        inOrder(node.left);
+        inOrder(node.right);
+        System.out.print(node.item + "->");
     }
 
     public static void main(String args[]) {
@@ -43,6 +48,8 @@ class TraverseTree {
         tre1.root.left.right = new Node4(6);
         System.out.println("Preorder Traversal->");
         tre1.preOrder(tre1.root);
+        tre1.inOrder(tre1.root);
+        tre1.postOrder(tre1.root);
     }
 }
 
