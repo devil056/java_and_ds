@@ -1,6 +1,7 @@
 import java.util.Stack;
 import java.util.function.BinaryOperator;
 
+
 class Node2 {
     int value;
     Node2 left;
@@ -9,7 +10,9 @@ class Node2 {
 
     public Node2(int data) {
         this.value = data;
+
     }
+
 
     public Node2 root;
 
@@ -33,6 +36,53 @@ class Node2 {
     }
 
     public static void preOrder(Node2 root) {
+        if (root == null)
+            return;
+        System.out.print(root.value + "\t");
+        preOrder(root.left);
+        preOrder(root.right);
+    }
+
+    public static void postOrder(Node2 root) {
+        if (root == null)
+            return;
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.print(root.value + "\t");
+    }
+
+    public static void inOrder(Node2 root) {
+        if (root == null)
+            return;
+        inOrder(root.left);
+        System.out.print(root.value + "\t");
+        inOrder(root.right);
+    }
+
+    public static void postOrder2(Node2 root) {
+        Stack<Node2> st = new Stack<>();
+        Node2 c = root;
+        while (c != null || !st.isEmpty()) {
+            if (c != null) {
+                st.push(c);
+                c = c.left;
+            } else {
+                Node2 temp = st.peek().right;
+                if (temp == null) {
+                    temp = st.pop();
+                    System.out.print(temp.value + "\t");
+                    while (!st.isEmpty() && temp == st.peek().right) {
+                        temp = st.pop();
+                        System.out.print(temp.value + "\t");
+                    }
+                } else
+                    c = temp;
+            }
+        }
+        System.out.println();
+    }
+
+    public static void preOrder2(Node2 root) {
         Stack<Node2> st = new Stack();
         st.push(root);
         System.out.println("Pre order value : ");
@@ -47,7 +97,7 @@ class Node2 {
         System.out.println();
     }
 
-    public static void inOrder(Node2 root) {
+    public static void inOrder2(Node2 root) {
         Stack<Node2> st = new Stack();
         Node2 temp = root;
         System.out.println("In order value : ");
@@ -67,14 +117,30 @@ class Node2 {
 
 class App {
     public static void main(String args[]) {
-        Node2 rootNode = new Node2(25);
-        rootNode.insert(rootNode, 11);
-        rootNode.insert(rootNode, 10);
-        rootNode.insert(rootNode, 30);
-        rootNode.insert(rootNode, 28);
-        rootNode.insert(rootNode, 20);
-        rootNode.insert(rootNode, 35);
-        rootNode.preOrder(rootNode);
-        rootNode.inOrder(rootNode);
+        Node2 rootnode = new Node2(25);
+        rootnode.insert(rootnode, 11);
+        rootnode.insert(rootnode, 10);
+        rootnode.insert(rootnode, 30);
+        rootnode.insert(rootnode, 28);
+        rootnode.insert(rootnode, 20);
+        rootnode.insert(rootnode, 35);
+        System.out.println("Pre order value : ");
+        rootnode.preOrder(rootnode);
+        System.out.println();
+        //System.out.println("In order value : ");
+        //rootnode.inOrder(rootnode);
+        //System.out.println();
+        System.out.println("Post order value : ");
+        rootnode.postOrder(rootnode);
+        System.out.println();
+        System.out.println("Post order value using iteration : ");
+        rootnode.postOrder2(rootnode);
+        System.out.println();
+        System.out.println("Pre order value using iteration : ");
+        rootnode.preOrder2(rootnode);
+        System.out.println();
+        System.out.println("In order value using iteration: ");
+        rootnode.inOrder2(rootnode);
+        System.out.println();
     }
 }
