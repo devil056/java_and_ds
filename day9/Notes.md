@@ -40,4 +40,10 @@ with in { }- you specify the number of characters or the length of string.
  _Position finding :_ <br>
 String: Hello find the ll position in the given string also find position of l in needle string.
 
-**Complete the Linked list nums addition on your own**
+**Complete the Linked list nums addition on your own** _[ Work in progress ]_
+<br>
+### Huffman coding
+### Heaps
+- There are two types of heaps max heap and min heap
+- **[Link to refer Max heap](https://www.gatevidyalay.com/heap-operations-max-heap-operations-examples/)**
+- 
