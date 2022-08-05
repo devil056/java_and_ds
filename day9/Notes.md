@@ -18,7 +18,8 @@
 - methods of child and parent class must have the same name 
 
 ---
-## Regex
+## Regex - Regular expressions
 
 Incase if we are to detect a pattern we use **Regex**.
-Inorder to test the regex we can use [Regex Test](https://regexr.com/).
+Inorder to test the regex we can use [Regex Test](https://regexr.com/) and for reference use [Reference](https://www.javatpoint.com/java-regex).
+- In java inorder to mark the end of String it appends with '\Z' and in regex that '\Z'==$ so append $ to match each String. 

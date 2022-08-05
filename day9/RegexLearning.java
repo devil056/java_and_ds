@@ -9,6 +9,7 @@ public class RegexLearning {
         List<String> emails=new ArrayList<String>();
 
         emails.add("murari0418@gmail.com");
+        emails.add("@gmail.com");
         String regex="^(.+)@(.+)$";
         Pattern pattern1=Pattern.compile(regex);
         for(String email:emails){
