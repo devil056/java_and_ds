@@ -61,13 +61,13 @@ class NodeSum {
 
     public static void main(String[] args) {
         NodeSum s = new NodeSum();
-        s.addNode(3);
-        s.addNode(4);
+        s.addNode(1);
         s.addNode(2);
+        s.addNode(3);
         s.printList();
         NodeSum s2 = new NodeSum();
+        s2.addNode(3);
         s2.addNode(4);
-        s2.addNode(6);
         s2.addNode(5);
         s2.printList();
         int num1=s.listToNum();
