@@ -26,6 +26,14 @@ class TraverseTree {
         preOrder(node.right);
     }
 
+    void inOrder(Node4 node){
+
+    }
+
+    void postOrder(Node4 node){
+
+    }
+
     public static void main(String args[]) {
         TraverseTree tre1 = new TraverseTree();
         tre1.root = new Node4(1);
