@@ -69,12 +69,10 @@ class Main {
             return;
         }
 
-
         Map<Character, Integer> freq = new HashMap<>();
         for (char c : text.toCharArray()) {
             freq.put(c, freq.getOrDefault(c, 0) + 1);
         }
-
 
         PriorityQueue<Node> pq;
         pq = new PriorityQueue<>(Comparator.comparingInt(l -> l.freq));
@@ -83,7 +81,6 @@ class Main {
         for (var entry : freq.entrySet()) {
             pq.add(new Node(entry.getKey(), entry.getValue()));
         }
-
 
         while (pq.size() != 1) {
             Node left = pq.poll();
