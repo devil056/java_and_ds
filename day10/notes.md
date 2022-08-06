@@ -61,3 +61,8 @@ The height of an AVL tree is always O(Logn) where n is the number of nodes in th
 - _**5**_
 
 ---
+
+```
+Formula for maximum number of binary trees from n number of node : (2^n)-n
+If we have 3 nodes the no. of trees we can get from them are 2^3=8 => 8-3 = 5. 
+```
