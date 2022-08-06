@@ -16,3 +16,6 @@
 In case if you want to delete data from the Binary search tree delete from the leaf to root always go for postorder.
 
 [Cheat Sheet](https://www.bigocheatsheet.com/) for the Big-O to decide on the data structure.
+
+AVL , Self balancing trees....
+AVL-> named after inventors Adelson-Velsky and Landis
