@@ -27,23 +27,24 @@ The height of an AVL tree is always O(Logn) where n is the number of nodes in th
 
 [Link for AVL Trees Notes](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/) <br>
 [Visualization of AVL](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)<br>
-[Link 2 for AVL and Trees](https://www.programiz.com/dsa/trees)
+[Link 2 for AVL and Trees](https://www.programiz.com/dsa/trees)<br>
+[Merkel Tree Implementation](https://www.pranaybathini.com/2021/05/merkle-tree.html)<br>
 
 # Quiz Questions
 
-1.Which of the following can not be traversed in a straight line to touch all elements?
+1. Which of the following can not be traversed in a straight line to touch all elements?
 - array
 - circular linked list
 - Queue
 - _**Tree**_
 
-2.The possible no. of binary trees that can be created with 3 nodes giving the sequence N,M,L when traversed in post-order
+2. The possible no. of binary trees that can be created with 3 nodes giving the sequence N,M,L when traversed in post-order
 - 1
 - 3
 - _**5**_
 - 8
 
-3.Which of the following graph traversals closely imitates level order traversal of a binary tree?
+3. Which of the following graph traversals closely imitates level order traversal of a binary tree?
 - Binary search
 - _**Breadth first search**_
 - Depth & Breadth first search
