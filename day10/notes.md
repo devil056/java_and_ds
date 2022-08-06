@@ -26,7 +26,8 @@ then we can guarantee an upper bound of O(Logn) for all these operations.
 The height of an AVL tree is always O(Logn) where n is the number of nodes in the tree (See this video lecture for proof).
 
 [Link for AVL Trees Notes](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/) <br>
-[Visualization of AVL](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
+[Visualization of AVL](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)<br>
+[Link 2 for AVL and Trees](https://www.programiz.com/dsa/trees)
 
 # Quiz Questions
 
