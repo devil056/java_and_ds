@@ -75,11 +75,12 @@ class WicketKeeper extends Player{
 }
 class PlayerPoly {
     public static void main(String[] args){
-        Player p=new Batsmen("MS Dhoni",150f);
-        Player p1=new Bowler("Ashwin",634);
-        Player p2=new WicketKeeper("Adam Gilchrist",547);
+        Batsmen p=new Batsmen("MS Dhoni",150f);
+        Bowler p1=new Bowler("Ashwin",634);
+        WicketKeeper p2=new WicketKeeper("Adam Gilchrist",547);
         p.getData();
         p1.getData();
         p2.getData();
+        p2.getStumpsCount();
     }
 }
