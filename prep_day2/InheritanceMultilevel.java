@@ -1,18 +1,24 @@
 class Movies{
     String genre;
     String actor;
-    Movies(String genre,String actor){
-        this.genre=genre;
-        this.actor=actor;
+    Movies(){
+        System.out.println("No parameters const");
     }
     Movies(String actor){
         this.actor=actor;
+        System.out.println("Single param const from base");
+    }
+    Movies(String genre,String actor){
+        this.genre=genre;
+        this.actor=actor;
+        System.out.println("double param const from base");
     }
 }
 
 class Bollywood extends Movies{
     Bollywood(){
         super("Romance;)","Emraan Hashmi");
+        System.out.println("Bolly const");
     }
     void printDetails(){
         System.out.println("Popular actor:"+this.actor);
@@ -45,6 +51,16 @@ class Tamil extends Movies{
     }
 }
 
+class Tollywood extends Movies{
+    Tollywood(){
+        super();
+        System.out.println("Hope to get this first");
+    }
+    void printDetails(){
+        System.out.println("Not sure whom to nominate.");
+    }
+}
+
 class Test{
     public static void main(String[] args){
         Malayalam m=new Malayalam();
@@ -53,5 +69,7 @@ class Test{
         b.printDetails();
         Tamil t=new Tamil();
         t.printDetails();
+        Tollywood tt=new Tollywood();
+        tt.printDetails();
     }
 }
