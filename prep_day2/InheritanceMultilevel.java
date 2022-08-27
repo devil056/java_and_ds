@@ -31,9 +31,27 @@ class Malayalam extends Movies{
         System.out.println("Actor: "+this.actor);
     }
 }
+
+class Tamil extends Movies{
+    String title;
+    Tamil(){
+        super("Vijay sethupathi");
+        this.title="Makkal selvan";
+    }
+
+    void printDetails(){
+        System.out.println("Title for the actor:"+this.title);
+        System.out.println("Actor name"+this.actor);
+    }
+}
+
 class Test{
     public static void main(String[] args){
         Malayalam m=new Malayalam();
         m.printDetails();
+        Bollywood b=new Bollywood();
+        b.printDetails();
+        Tamil t=new Tamil();
+        t.printDetails();
     }
 }
