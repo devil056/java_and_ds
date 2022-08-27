@@ -1,5 +1,3 @@
-import javax.sound.midi.Soundbank;
-
 class Player{
     static String sport="cricket";
     void getData(){
