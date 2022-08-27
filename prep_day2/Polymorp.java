@@ -2,6 +2,9 @@ class GeoShapes{
     void sides(){
         System.out.println("Default func");
     }
+    void sides(int x){
+        System.out.println("Another method overriding fr different behaviour");
+    }
 }
 
 class Rectangle extends GeoShapes{
@@ -22,6 +25,12 @@ class Hexagon extends GeoShapes{
     }
 }
 
+class Circle extends GeoShapes{
+    void sides(int side){
+        System.out.println("The circle has no sides");
+    }
+}
+
 class Polymorp {
     public static void main(String[] args){
         GeoShapes g=new GeoShapes();
@@ -32,5 +41,8 @@ class Polymorp {
         g2.sides();
         GeoShapes g3=new Hexagon();
         g3.sides();
+        GeoShapes c=new Circle();
+        c.sides(0);
+        c.sides();
     }
 }
